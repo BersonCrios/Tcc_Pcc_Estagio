@@ -1,0 +1,112 @@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Novo Local
+</button>
+
+<card cardTitle="">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th class="text-center">Nome</th>
+        <th class="text-center">Categoria</th>
+        <th class="text-center">Latitude</th>
+        <th class="text-center">Longitude</th>
+        <th class="text-center">OBJ</th>
+        <th class="text-center">MTL</th>
+        <th class="text-center">Gerênciar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let local of listLocals; let index = index">
+        <td>
+          {{index}}
+        </td>
+        <td>
+          {{local.nome}}
+        </td>
+
+        <td>
+          {{local.categoria.nome}}
+        </td>
+
+        <td>
+          {{local.latitude}}
+        </td>
+
+        <td>
+          {{local.longitude}}
+        </td>
+
+        <td>
+          {{local.imagePath1}}
+        </td>
+
+        <td>
+          {{local.imagePath2}}
+        </td>
+        <td>
+          <button (click)="deleteLocals(local._id)" class="btn btn-danger">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</card>
+
+<!-- MODAL DE CADASTRO DE CATEGORIAS -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Novo Local</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- FORMULÁRIO DE CADASTRO DE LOCAIS -->
+        <form class="form-group" [formGroup]="localsForm">
+          <div class="row">
+            <div class="col-sm-12 col-md-12">
+              <div class="form-group">
+                <label for="">Nome</label>
+                <input class="form-control rounded" formControlName="nome" placeholder="" type="text" />
+
+                <label for="">Latitude</label>
+                <input class="form-control rounded" formControlName="latitude" placeholder="" type="number" />
+
+                <label for="">Longitude</label>
+                <input class="form-control rounded" formControlName="longitude" placeholder="" type="number" />
+
+                <label for="">Categoria</label>
+                <select name="categoria" id="categoria" formControlName="categoria" class="form-control">
+                  <option *ngFor="let categoria of listCategories" value="{{categoria._id}}">{{categoria.nome}}</option>
+                </select>
+
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" formControlName="imagePath1" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                  </div>
+                </div>
+
+                
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" formControlName="imagePath2" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="createLocal()">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>

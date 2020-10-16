@@ -1,0 +1,144 @@
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto
+% ---
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+% \includepdf{folhadeaprovacao_final.pdf}
+
+% ---
+\pagenumbering{arabic}
+% ---
+% Dedicatória
+% ---
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \centering
+   \noindent
+   \textit{ Este trabalho é dedicado à minha mãe Iraneide e a meu pai Joel, que sempre me apoiaram, deram forças e incentivaram a prosseguir. } \vspace*{\fill}
+\end{dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% --- Es
+\begin{agradecimentos}
+Primeiramente a Deus seja dado toda hora, louvor e glória por ter me dado saúde e força para superar todas as dificuldades.
+
+Agradeço a minha mãe Iraneide Borges Taveira de Sousa, heroína que me apoia e incentiva em todas a horas difíceis, de desanimo e cansaço.
+
+Ao meu pai Joel Berson de Sousa que apesar das dificuldades sempre me fortaleceu o que para min é muito importante.
+
+A Universidade Estadual do Tocantins, pela oportunidade de está fazendo o curso.
+
+Ao professor Me. Jânio Elias Teixeira Júnior, pela orientação, apoio, confiança e dedicação.
+
+Ao meus amigo Heres Neto e Muriel, pelo suporte, pelas correções e incentivo.
+
+Aos meus amigos Matheus José Alves, Daniel Ferreira, Alecxandra Mesquita, Max Carvalho, Weslley Quadros e Apollyane Farias que estiveram e estão sempre a me ajudar e a apoiar.
+\end{agradecimentos}
+% ---
+
+% ---
+% Epígrafe
+% ---
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{`Consagre ao Senhor tudo o que você faz,\\
+			e os seus planos serão bem-sucedidos. \\
+		(Bíblia Sagrada, Provérbios 16:3)}
+	\end{flushright}
+\end{epigrafe}
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+O e-learning é um conceito que trata de apoiar o ensino tradicional, fornecendo o conteúdo com a utilização de tecnologias digitais e traz consigo os benefícios da ubiquidade, aumentando a disponibilidade do conteúdo, independentemente do lugar em que o aluno se encontra ou tempo que ele dispõe para o acesso. O grande desafio hoje é fornecer um mecanismo de ensino o qual o aluno se motive e até mesmo sinta o prazer em aprender e para implementar isso, podemos utilizar as técnicas de gamificação. A gamificação trata do uso de mecânicas presentes em jogos para engajar o aluno a resolver problemas e melhorar o aprendizado, motivando ações e comportamentos. Sabendo-se que o autista precisa de meios diferentes de estímulos para o desenvolvimento de habilidades como: acadêmicas, vida diária e higiene, faz-se necessárias diferentes técnicas para despertar essas habilidades, sendo as mais conhecidas: a ABA, o TEACCH e o PECS. A partir desse cenário, este trabalho tem como principal objetivo o desenvolvimento de um projeto de software voltado ao ensino, com o propósito em auxiliar o tratamento de pacientes com transtorno do espectro autista, através de técnicas de e-learning e gamificação. Como resultado desse trabalho, um conjunto de artefatos de software foram gerados o qual poderá ser utilizado para o desenvolvimento desse produto.
+
+ \textbf{Palavras-chaves}: Autismo, aplicativo, gamificação, e-learning.
+ 
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+ 	E-learning is a concept that seeks to support traditional teaching, providing content with the use of digital technologies and brings with it the benefits of ubiquity, increasing the availability of content regardless of where the student is or how long he provides for access. The great challenge today is to provide a teaching mechanism that the student can motivate and even feel the pleasure of learning and to implement this, we can use the gamification techniques. Gambling deals with the use of mechanics present in games to engage the student in solving problems and improve learning, motivating actions and behaviors. Knowing that the autistic needs different means of stimuli for the development of abilities like: academic, daily life and hygiene, different techniques are needed to awaken these abilities, being the most known: ABA, TEACCH and PECS . From this scenario, this work has as main objective the development of a software project aimed at teaching, with the purpose of assisting the treatment of patients with autism spectrum disorder, through e-learning and gamification techniques. As a result of this work, a set of software artifacts were generated which could be used for the development of this product
+   \vspace{\onelineskip}
+ 
+   \noindent 
+   \textbf{Key-words}: Authism, app, gamification, e-learning.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+\newpage
+%\pdfbookmark[0]{\listtablename}{lot}
+%\newpage
+\listoftables*
+%\cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item ONU - Organização das Nações Unidas
+  \item APAE - Associação de Pais e Amigos dos Excepcionais
+  \item DSM -  Manual diagnóstico e estatístico de transtornos mentais
+  \item APA - American Psychiatric Association
+  \item TEA - Transtorno do espectro autista
+  \item RUP - Rational Unified Provess
+  \item TEACCH - Treatment and Education of Autistic and Related Communication Handicapped Children
+  \item ABA - Applied Behavior Analysis
+  \item PECS - Picture Exchange Communication System
+  \item MDA - Mechanics-Dynamics-Aesthetics
+  \item TIMS - Tecnologia da Informação Móveis e Sem Fio
+\end{siglas}
+% ---
+
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+

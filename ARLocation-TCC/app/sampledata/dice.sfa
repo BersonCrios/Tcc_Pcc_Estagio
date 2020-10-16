@@ -1,0 +1,49 @@
+ achar{
+  materials: [
+    {
+      name: 'lambert5SG',
+      parameters: [
+        {
+          baseColor: 'dice Txt',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/dice.obj',
+    name: 'dice',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/dice Txt.png',
+      name: 'dice Txt',
+      pipeline_name: 'dice Txt.png',
+    },
+  ],
+  version: '0.54:2',
+}

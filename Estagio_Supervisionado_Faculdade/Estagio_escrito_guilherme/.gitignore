@@ -1,0 +1,15 @@
+*.aux
+
+*.idx
+
+*.log
+
+*.bbl
+
+*.lo?
+
+*.toc
+*.blg
+*.lof
+*.lot
+*.gz

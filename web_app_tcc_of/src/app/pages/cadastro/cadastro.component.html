@@ -1,0 +1,17 @@
+<card cardTitle="Cadastre-se">
+  <form class="form-group" [formGroup]="cadastroForm">
+    <label class="control-label">Nome</label>
+    <input type="text" class="form-control" placeholder="Nome" formControlName="name">
+
+    <label class="control-label">Nome de usuário</label>
+    <input type="text" class="form-control" placeholder="Nome de usuário" formControlName="username">
+
+    <label class="control-label">Email</label>
+    <input type="text" class="form-control" placeholder="Email" formControlName="email">
+    
+    <label class="control-label">Senha</label>
+    <input type="password" class="form-control" placeholder="Senha" formControlName="password">
+
+    <button type="button" class="btn btn-primary" (click)="cadastrar()">Cadastrar</button>
+  </form>
+</card>

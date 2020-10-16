@@ -1,0 +1,12 @@
+desktop.ini
+Projeto.pdf
+*.lof
+*.aux
+*.log
+*.lot
+*.out
+*.toc
+*.gz
+*.lock
+.DS_Store
+~$quisitosFuncionaisApp.docx

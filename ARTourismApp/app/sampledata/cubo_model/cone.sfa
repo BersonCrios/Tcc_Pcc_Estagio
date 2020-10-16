@@ -1,0 +1,49 @@
+{
+  materials: [
+    {
+      name: 'None',
+      parameters: [
+        {
+          baseColor: 'felix-wegerer-1359607-unsplash',
+        },
+        {
+          baseColorTint: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/cubo_model/cone.obj',
+    name: 'cone',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: '/home/berson/Imagens/felix-wegerer-1359607-unsplash.jpg',
+      name: 'felix-wegerer-1359607-unsplash',
+      pipeline_name: '/home/berson/Imagens/felix-wegerer-1359607-unsplash.jpg',
+    },
+  ],
+  version: '0.54:1',
+}

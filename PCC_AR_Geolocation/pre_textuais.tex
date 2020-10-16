@@ -1,0 +1,175 @@
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto
+% ---
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+% \includepdf{folhadeaprovacao_final.pdf}
+%
+\begin{folhadeaprovacao}
+
+  	
+  	
+  	\begin{center}
+  		\includegraphics[width=1\textwidth]{imagens/unitins.png}
+  		\ABNTEXchapterfont\Large   CURSO DE SISTEMAS DE INFORMA{\c{C}}{\~{A}}O
+  		
+  		\par
+  		\vspace*{1cm}     
+  		{\ABNTEXchapterfont\bfseries\large \expandafter\MakeUppercase{\imprimirtitulo}  \vspace*{1cm}    }
+  		\par
+  		{\large \expandafter\MakeUppercase{\imprimirautor}}
+  		%\vspace*{\fill}
+  		\par
+  		\vspace*{1cm}     
+  		\hspace{.45\textwidth}
+  		\begin{minipage}{.5\textwidth}
+  			\small\imprimirpreambulo
+  			
+  		\end{minipage}%
+  	%	\vspace*{\fill}
+  	\end{center}
+  
+        
+  
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+   \assinatura{\textbf{Prof. Me Jânio Elias Teixeira Junior} \\ Convidado 1}
+   \assinatura{\textbf{Prof. Me Marco Antônio Firmino de Sousa} \\ Convidado 2}
+      
+   \begin{center}
+    \vspace*{0.4cm}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{0.7cm}
+  \end{center}
+  
+\end{folhadeaprovacao}
+% ---
+
+% ---
+% Dedicatória
+% ---
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \centering
+   \noindent
+   \textit{À minha família, por sua capacidade de acreditar e investir em mim. Mãe, seu cuidado e dedicação foi o que me deram, em todos os momentos, a esperança para seguir em frente. Pai, sua presença significou a segurança de que não estou sozinho nessa caminhada. } \vspace*{\fill}
+\end{dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% --- Es
+\begin{agradecimentos}
+Primeiramente a Deus seja dado toda hora, louvor e glória por ter me dado saúde e força para superar todas as dificuldades.
+
+Agradeço a minha mãe Iraneide Borges Taveira de Sousa, heroína que me apoia e incentiva em todas a horas difíceis, de desanimo e cansaço.
+
+Ao meu pai Joel Berson de Sousa que apesar das dificuldades sempre me fortaleceu o que para mim é muito importante.
+
+A Universidade Estadual do Tocantins, pela oportunidade de estar fazendo o curso.
+
+Ao meu professor orientador Me. Silvano Maneck Malfatti, pela orientação, apoio, confiança e dedicação.
+
+Aos meus amigos Matheus José Alves, Daniel Ferreira, Alecxandra Mesquita, Max Carvalho, Weslley Quadros e Apollyane Farias que estiveram e estão sempre a me ajudar e a apoiar.
+
+
+\end{agradecimentos}
+% ---
+
+% ---
+% Epígrafe
+% ---
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{`O temor do Senhor é o princípio do saber,\\
+			mas os loucos desprezam a sabedoria e o ensino.\\
+		(Bíblia Sagrada, Provérbios 1:7)}
+	\end{flushright}
+\end{epigrafe}
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+		Os dispositivos móveis evoluíram bastante nos últimos anos e continuam a evoluir, com isso diversas novas funcionalidades estão sendo incluídas ao longo do tempo, uma delas e que se tornou popular desde o seu lançamento foi a geolocalização, onde é possível saber a localização do dispositivo em tempo real, por meio da triangulação das torres que fornecem sinal de telefone em conjunto com os satélites que cobrem dispositivo. Outra evolução significativa foi a disponibilização de realidade aumentada para dispositivos móveis, o que torna possível aplicações que misturam o mundo real com elementos virtuais, sendo possível ao usuário interagir com esses componentes através da câmera desses dispositivos. Para o desenvolvimento de aplicações com o uso de realidade aumentada surgiram bibliotecas que auxiliam no desenvolvimento, sendo algumas delas ARToolKit, Vuforia, LayAR e a mais recente lançada pela google ARCore. Com tecnologias de realidade aumentada e geolocalização foram desenvolvidos alguns aplicativos que ficaram bastante conhecidos, como o jogo \textit{pokemon go} e \textit{ingress} da Niantic Inc. 
+ 
+ \textbf{Palavras-chaves}: Realidade Aumentada, Geolocalização, Pokemon Go, ARCore  .
+ 
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+ Mobile devices have evolved quite a lot in recent years and continue to evolve, and they are being selected over time, since they have become popular since its launch once, where it is possible to know the location of the device in real time , by means of the triangulation of the towers that telephone signal in conjunction with the satellites covering device. Powered by the real-time virtual devices, which should not apply to the virtual server of the physical devices, which the other user was using with the specified devices in the device from the photos? For the development of applications with the use of their own capacity have increased the libraries that aid the development, being some of them the ARToolKit, the Vuforia, the Layar and the most recent launched by google ARCore. Reality technologies have grown and gone bad in some well-known applications, such as the \ textit {pokemon go} game and \ textit {ticket} of Niantic Inc.
+   \vspace{\onelineskip}
+ 
+   \noindent 
+   \textbf{Key-words}: Augmented Reality, Geolocation, Pokemon Go, ARCore.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+\newpage
+\pdfbookmark[0]{\listtablename}{lot}
+\newpage
+\listoftables*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item App - Aplicativo
+  \item RA - Realidade Aumentada
+  \item API - \textit{Application Programming Interface}
+\end{siglas}
+% ---
+
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
